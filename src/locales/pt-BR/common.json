@@ -1,0 +1,28 @@
+{
+  "app": {
+    "title": "Portfolio em construção",
+    "scaffolding": "Estrutura inicial pronta. Próximo passo: implementar as seções seguindo o design system."
+  },
+  "nav": {
+    "about": "Sobre",
+    "skills": "Skills",
+    "projects": "Projetos",
+    "experience": "Experiência",
+    "contact": "Contato"
+  },
+  "theme": {
+    "toggle": "Alternar tema",
+    "light": "Claro",
+    "dark": "Escuro"
+  },
+  "language": {
+    "switch": "Mudar idioma",
+    "pt-BR": "Português",
+    "en": "English",
+    "es": "Español"
+  },
+  "footer": {
+    "copyright": "© 2026 Pedro Ferreira · Feito com dedicação",
+    "stack": "React · TypeScript · Tailwind · HeroUI"
+  }
+}

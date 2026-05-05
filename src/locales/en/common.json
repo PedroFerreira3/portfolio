@@ -1,0 +1,28 @@
+{
+  "app": {
+    "title": "Portfolio under construction",
+    "scaffolding": "Initial scaffolding ready. Next: implement sections following the design system."
+  },
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "language": {
+    "switch": "Change language",
+    "pt-BR": "Português",
+    "en": "English",
+    "es": "Español"
+  },
+  "footer": {
+    "copyright": "© 2026 Pedro Ferreira · Built with care",
+    "stack": "React · TypeScript · Tailwind · HeroUI"
+  }
+}

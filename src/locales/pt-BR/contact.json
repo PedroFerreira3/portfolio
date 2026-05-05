@@ -1,0 +1,21 @@
+{
+  "label": "// 05 — Contato",
+  "title": "Vamos conversar?",
+  "subtitle": "Aberto a oportunidades, freelas e boas conversas sobre tecnologia.",
+  "form": {
+    "name": "Nome",
+    "namePlaceholder": "Seu nome",
+    "email": "Email",
+    "emailPlaceholder": "seu@email.com",
+    "subject": "Assunto",
+    "subjectPlaceholder": "Proposta, dúvida, projeto...",
+    "message": "Mensagem",
+    "messagePlaceholder": "Olá, Pedro! Gostaria de conversar sobre...",
+    "submit": "Enviar Mensagem"
+  },
+  "links": {
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "email": "Email"
+  }
+}

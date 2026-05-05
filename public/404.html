@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=/portfolio/" />
+    <title>Pedro Ferreira — Portfolio</title>
+    <script>
+      (function () {
+        var path = window.location.pathname.replace(/^\/portfolio\//, '');
+        var hash = window.location.hash || '';
+        if (path && path !== 'index.html') {
+          window.location.replace('/portfolio/#' + path + hash);
+        } else {
+          window.location.replace('/portfolio/' + hash);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecionando para <a href="/portfolio/">/portfolio/</a>…</p>
+  </body>
+</html>

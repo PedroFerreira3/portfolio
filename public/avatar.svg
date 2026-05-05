@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <rect width="200" height="200" rx="100" fill="#18181B"></rect>
+  <rect width="200" height="200" rx="100" fill="#083344" opacity="0.5"></rect>
+  <circle cx="100" cy="82" r="36" fill="#27272A" stroke="#3F3F46" stroke-width="2"></circle>
+  <circle cx="100" cy="82" r="28" fill="#164E63"></circle>
+  <text x="100" y="90" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="700" fill="#22D3EE">PF</text>
+  <path d="M30 160 Q30 130 100 130 Q170 130 170 160 L170 200 L30 200 Z" fill="#27272A"></path>
+  <path d="M40 160 Q40 140 100 140 Q160 140 160 160 L160 200 L40 200 Z" fill="#164E63" opacity="0.6"></path>
+</svg>

@@ -1,0 +1,23 @@
+{
+  "label": "// 04 — Experience",
+  "title": "Professional Journey",
+  "currentBadge": "Current",
+  "educationLabel": "Education",
+  "cpcon": {
+    "company": "Grupo CPCON Brasil",
+    "role": "Full Stack Developer Intern",
+    "date": "Mar 2024 — present",
+    "desc": "Developing web solutions with Next.js, React, and TypeScript on the frontend, and Python/Django on the backend. Participating in agile sprints, code reviews, and continuous feature delivery."
+  },
+  "interasoft": {
+    "company": "Interasoft",
+    "role": "Programmer",
+    "date": "2023 — 2024",
+    "desc": "Development and maintenance of software systems, focusing on code quality and customer value delivery. Experience with agile methodologies and teamwork."
+  },
+  "fatec": {
+    "title": "Information Systems Analysis & Development",
+    "subtitle": "FATEC Ourinhos — São Paulo, Brazil",
+    "date": "Feb 2023 — Dec 2026 (expected)"
+  }
+}

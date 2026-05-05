@@ -1,0 +1,21 @@
+{
+  "label": "// 05 — Contact",
+  "title": "Let's talk?",
+  "subtitle": "Open to opportunities, freelance work, and good conversations about technology.",
+  "form": {
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you@email.com",
+    "subject": "Subject",
+    "subjectPlaceholder": "Proposal, question, project...",
+    "message": "Message",
+    "messagePlaceholder": "Hi Pedro! I'd like to talk about...",
+    "submit": "Send Message"
+  },
+  "links": {
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "email": "Email"
+  }
+}

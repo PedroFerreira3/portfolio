@@ -1,0 +1,22 @@
+{
+  "label": "// 03 — Proyectos",
+  "title": "Proyectos Destacados",
+  "subtitle": "Una selección de trabajos que reflejan mi evolución como desarrollador.",
+  "demo": "Demo",
+  "github": "GitHub",
+  "bar-do-piau": {
+    "title": "Sistema de Gestión Bar do Piau",
+    "category": "// Gestión · Software",
+    "desc": "Software de gestión completo para establecimientos alimenticios, con control de pedidos, inventario e informes."
+  },
+  "ipv4-calc": {
+    "title": "Calculadora de Red IPv4",
+    "category": "// Herramienta · Red",
+    "desc": "Herramienta funcional para cálculo de direcciones IPv4, subredes y notación CIDR, con interfaz limpia y resultados en tiempo real."
+  },
+  "agiliza-ai": {
+    "title": "Agiliza Aí",
+    "category": "// TFG · Servicios",
+    "desc": "Proyecto de fin de grado enfocado en las reglas de negocio y la lógica de prestación de servicios — conectando proveedores y clientes de forma ágil."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "label": "// 01 — About Me",
+  "title": "Building the future,\none line of code at a time.",
+  "p1": "I'm an Information Systems student at FATEC Ourinhos, expecting to graduate in December 2026. Passionate about web development and building solutions that actually solve problems.",
+  "p2": "Currently working as a Full Stack Developer Intern at Grupo CPCON Brasil, applying my skills in Next.js, React, TypeScript, and Python/Django on a daily basis. Previously worked as a Programmer at Interasoft.",
+  "p3": "I believe good code is readable, testable, and maintainable — and I always strive to balance fast delivery with long-term quality.",
+  "stats": {
+    "years": "Years of experience",
+    "projects": "Projects delivered",
+    "stack": "Stack technologies",
+    "graduation": "Expected graduation"
+  },
+  "education": {
+    "title": "Information Systems Analysis & Development",
+    "subtitle": "FATEC Ourinhos · Expected: Dec 2026"
+  }
+}
