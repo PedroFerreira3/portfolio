@@ -1,27 +1,53 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Navbar } from '@/components/layout/Navbar';
+import { Footer } from '@/components/layout/Footer';
+import { Hero } from '@/components/sections/Hero';
+import { About } from '@/components/sections/About';
+import { Skills } from '@/components/sections/Skills';
+import { Projects } from '@/components/sections/Projects';
+import { Experience } from '@/components/sections/Experience';
+import { Contact } from '@/components/sections/Contact';
+
+function Divider() {
+  return (
+    <div className="container-layout">
+      <div className="h-px w-full bg-separator" />
+    </div>
+  );
+}
 
 function App() {
-  const { i18n, t } = useTranslation('common');
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     document.documentElement.lang = i18n.language;
   }, [i18n.language]);
 
   return (
-    <main className="container-layout flex min-h-screen flex-col items-center justify-center gap-6 py-24 text-center">
-      <span className="text-fluid-sm font-mono text-accent">// scaffolding</span>
-      <h1 className="text-fluid-4xl font-bold">{t('app.title', 'Portfolio em construção')}</h1>
-      <p className="text-fluid-base max-w-md text-muted">
-        {t(
-          'app.scaffolding',
-          'Estrutura inicial pronta. Próximo passo: implementar as seções seguindo o design system.',
-        )}
-      </p>
-      <code className="text-fluid-sm rounded-md bg-surface-secondary px-3 py-1.5 text-accent">
-        npm run dev
-      </code>
-    </main>
+    <>
+      <a
+        href="#hero"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-accent focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-accent-foreground"
+      >
+        Pular para o conteúdo
+      </a>
+      <Navbar />
+      <main>
+        <Hero />
+        <Divider />
+        <About />
+        <Divider />
+        <Skills />
+        <Divider />
+        <Projects />
+        <Divider />
+        <Experience />
+        <Divider />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
 
