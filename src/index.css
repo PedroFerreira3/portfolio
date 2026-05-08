@@ -1,9 +1,4 @@
 @import 'tailwindcss';
-@import '@heroui/react/styles';
-
-@custom-variant dark (&:where(.dark, .dark *));
-
-@source '../node_modules/@heroui/react/dist/**/*.{js,mjs}';
 
 @theme {
   --font-display: 'Space Grotesk', sans-serif;
@@ -12,8 +7,22 @@
 
   --container-layout: 1200px;
 
+  --color-background: #09090b;
+  --color-foreground: #fafafa;
+  --color-surface: #18181b;
+  --color-surface-secondary: #27272a;
+  --color-surface-tertiary: #3f3f46;
+  --color-accent: #22d3ee;
+  --color-accent-foreground: #09090b;
+  --color-border: #3f3f46;
+  --color-separator: #27272a;
+  --color-focus: #22d3ee;
+  --color-muted: #71717a;
+
   --animate-fade-up: fade-up 600ms ease-out forwards;
   --animate-pulse-soft: pulse-soft 2s ease-in-out infinite;
+  --animate-marquee: marquee 20s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 20s linear infinite;
 
   @keyframes fade-up {
     0% {
@@ -35,72 +44,24 @@
       opacity: 0.4;
     }
   }
-}
 
-/* Light theme overrides — accent stays cyan, but darkened for AA contrast on light bg */
-:root,
-.light {
-  --background: #fafafa;
-  --foreground: #18181b;
-  --surface: #ffffff;
-  --surface-foreground: #18181b;
-  --surface-secondary: #f4f4f5;
-  --surface-secondary-foreground: #18181b;
-  --surface-tertiary: #e4e4e7;
-  --surface-tertiary-foreground: #18181b;
-  --overlay: #ffffff;
-  --overlay-foreground: #18181b;
-  --muted: #71717a;
-  --default: #e4e4e7;
-  --default-foreground: #18181b;
-  --accent: #0891b2;
-  --accent-foreground: #ffffff;
-  --border: #e4e4e7;
-  --separator: #f4f4f5;
-  --focus: #0891b2;
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% / 3));
+    }
+  }
 
-  --bg-base: #fafafa;
-  --bg-surface: #ffffff;
-  --bg-elevated: #f4f4f5;
-  --fg-primary: #18181b;
-  --fg-secondary: #52525b;
-  --fg-muted: #71717a;
-  --fg-disabled: #a1a1aa;
-  --tag-bg: #cffafe;
-  --tag-fg: #155e75;
-  --accent-bg: #ecfeff;
-}
-
-.dark {
-  --background: #09090b;
-  --foreground: #fafafa;
-  --surface: #18181b;
-  --surface-foreground: #fafafa;
-  --surface-secondary: #27272a;
-  --surface-secondary-foreground: #fafafa;
-  --surface-tertiary: #3f3f46;
-  --surface-tertiary-foreground: #fafafa;
-  --overlay: #18181b;
-  --overlay-foreground: #fafafa;
-  --muted: #71717a;
-  --default: #27272a;
-  --default-foreground: #fafafa;
-  --accent: #22d3ee;
-  --accent-foreground: #09090b;
-  --border: #3f3f46;
-  --separator: #27272a;
-  --focus: #22d3ee;
-
-  --bg-base: #09090b;
-  --bg-surface: #18181b;
-  --bg-elevated: #27272a;
-  --fg-primary: #fafafa;
-  --fg-secondary: #a1a1aa;
-  --fg-muted: #71717a;
-  --fg-disabled: #52525b;
-  --tag-bg: #164e63;
-  --tag-fg: #67e8f9;
-  --accent-bg: #083344;
+  @keyframes marquee-reverse {
+    from {
+      transform: translateX(calc(-100% / 3));
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 }
 
 @layer base {
@@ -119,8 +80,8 @@
   }
 
   body {
-    background-color: var(--background);
-    color: var(--foreground);
+    background-color: var(--color-background);
+    color: var(--color-foreground);
     font-family: var(--font-body);
     line-height: 1.65;
     min-height: 100vh;
@@ -131,7 +92,7 @@
   h3,
   h4 {
     font-family: var(--font-display);
-    color: var(--foreground);
+    color: var(--color-foreground);
   }
 
   code,
@@ -147,7 +108,7 @@
   }
 
   *:focus-visible {
-    outline: 2px solid var(--focus);
+    outline: 2px solid var(--color-focus);
     outline-offset: 2px;
     border-radius: 4px;
   }
