@@ -1,17 +1,13 @@
 {
-  "label": "// 01 — Sobre Mí",
-  "title": "Construyendo el futuro,\nuna línea de código a la vez.",
+  "heading": "Sobre Mí",
   "p1": "Soy estudiante de Análisis y Desarrollo de Sistemas en FATEC Ourinhos, con graduación prevista para diciembre de 2026. Apasionado por el desarrollo web y por construir soluciones que realmente resuelven problemas.",
   "p2": "Actualmente trabajo como Pasante de Desarrollo Full Stack en Grupo CPCON Brasil, donde aplico mis conocimientos en Next.js, React, TypeScript y Python/Django día a día. Anteriormente trabajé como Programador en Interasoft.",
-  "p3": "Creo que el buen código es aquel que es legible, testeable y sostenible — y siempre busco equilibrar entregas rápidas con calidad a largo plazo.",
+  "p3": "Creo que el buen código es aquel que es legible, testeable y sostenible y siempre busco equilibrar entregas rápidas con calidad a largo plazo.",
   "stats": {
     "years": "Años de experiencia",
     "projects": "Proyectos entregados",
     "stack": "Tecnologías en el stack",
-    "graduation": "Graduación prevista"
-  },
-  "education": {
-    "title": "Análisis y Desarrollo de Sistemas",
-    "subtitle": "FATEC Ourinhos · Previsión: Dic 2026"
+    "graduation": "Graduación prevista",
+    "graduationValue": "Dic 2026"
   }
 }

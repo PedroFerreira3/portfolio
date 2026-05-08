@@ -8,7 +8,6 @@ export interface Project {
   tags: string[];
   demoUrl?: string;
   repoUrl?: string;
-  imageUrl?: string;
 }
 
 export interface ExperienceItem {
@@ -16,15 +15,12 @@ export interface ExperienceItem {
   companyKey: string;
   roleKey: string;
   descKey: string;
-  startDate: string;
-  endDate: string | null;
   current: boolean;
 }
 
-export interface SkillGroup {
-  id: 'frontend' | 'backend';
-  titleKey: string;
-  skills: string[];
+export interface SkillItem {
+  name: string;
+  iconKey: string;
 }
 
 export interface NavLink {

@@ -1,9 +1,17 @@
 {
-  "label": "// 03 — Projects",
   "title": "Featured Projects",
   "subtitle": "A selection of work that reflects my growth as a developer.",
   "demo": "Demo",
   "github": "GitHub",
+  "viewToggle": {
+    "label": "View mode",
+    "grid": "Grid",
+    "list": "List"
+  },
+  "pagination": {
+    "previous": "Previous page",
+    "next": "Next page"
+  },
   "bar-do-piau": {
     "title": "Bar do Piau Management System",
     "category": "// Management · Software",
