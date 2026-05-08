@@ -1,5 +1,4 @@
 {
-  "label": "// 05 — Contato",
   "title": "Vamos conversar?",
   "subtitle": "Aberto a oportunidades, freelas e boas conversas sobre tecnologia.",
   "form": {
@@ -9,6 +8,7 @@
     "emailPlaceholder": "seu@email.com",
     "subject": "Assunto",
     "subjectPlaceholder": "Proposta, dúvida, projeto...",
+    "subjectDefault": "Contato via portfólio",
     "message": "Mensagem",
     "messagePlaceholder": "Olá, Pedro! Gostaria de conversar sobre...",
     "submit": "Enviar Mensagem"

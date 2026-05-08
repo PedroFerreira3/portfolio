@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { GraduationCap } from 'lucide-react';
 import { experiences } from '@/data/experience';
-import { SectionLabel } from '@/components/ui/SectionLabel';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { cn } from '@/lib/utils';
 
@@ -11,7 +10,6 @@ export function Experience() {
   return (
     <section id="experiencia" className="container-layout py-20 lg:py-28">
       <FadeIn>
-        <SectionLabel>{t('experience:label')}</SectionLabel>
         <h2 className="text-fluid-3xl mb-12 font-display font-semibold leading-tight tracking-tight">
           {t('experience:title')}
         </h2>
@@ -52,8 +50,19 @@ export function Experience() {
                     </span>
                   )}
                 </div>
-                <div className="mb-2 text-sm text-accent">{t(exp.roleKey)}</div>
-                <p className="text-sm leading-relaxed text-muted">{t(exp.descKey)}</p>
+                <div className="mb-3 text-sm text-accent">{t(exp.roleKey)}</div>
+                <ul className="space-y-1.5">
+                  {(() => {
+                    const bullets = t(exp.descKey, { returnObjects: true });
+                    if (!Array.isArray(bullets)) return null;
+                    return (bullets as string[]).map((bullet, i) => (
+                      <li key={i} className="flex items-start gap-2.5 text-sm leading-relaxed text-muted">
+                        <span aria-hidden className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-accent/60" />
+                        {bullet}
+                      </li>
+                    ));
+                  })()}
+                </ul>
               </li>
             ))}
           </ol>
@@ -63,7 +72,12 @@ export function Experience() {
           <div className="mb-4 font-mono text-[11px] uppercase tracking-wider text-muted">
             {t('experience:educationLabel')}
           </div>
-          <div className="rounded-2xl border border-border bg-surface p-6">
+          <a
+            href="https://fatecourinhos.cps.sp.gov.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group/fatec block rounded-2xl border border-border bg-surface p-6 transition-all duration-200 hover:border-accent hover:shadow-[0_0_24px_rgba(34,211,238,0.08)]"
+          >
             <div className="mb-3.5 flex h-11 w-11 items-center justify-center rounded-lg bg-accent/10">
               <GraduationCap size={20} strokeWidth={1.5} className="text-accent" />
             </div>
@@ -72,7 +86,7 @@ export function Experience() {
             </div>
             <div className="text-xs text-muted">{t('experience:fatec.subtitle')}</div>
             <div className="mt-2 font-mono text-[11px] text-accent">{t('experience:fatec.date')}</div>
-          </div>
+          </a>
         </FadeIn>
       </div>
     </section>

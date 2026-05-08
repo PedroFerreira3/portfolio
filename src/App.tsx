@@ -18,7 +18,7 @@ function Divider() {
 }
 
 function App() {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     document.documentElement.lang = i18n.language;
@@ -30,12 +30,11 @@ function App() {
         href="#hero"
         className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-accent focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-accent-foreground"
       >
-        Pular para o conteúdo
+        {t('a11y.skipToContent')}
       </a>
       <Navbar />
       <main>
         <Hero />
-        <Divider />
         <About />
         <Divider />
         <Skills />

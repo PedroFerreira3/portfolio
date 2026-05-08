@@ -2,7 +2,6 @@ import { type FormEvent } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ArrowUpRight, Mail, Send } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '@/components/ui/BrandIcons';
-import { SectionLabel } from '@/components/ui/SectionLabel';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { SOCIAL } from '@/data/nav';
 
@@ -11,7 +10,7 @@ const LINKS = [
     id: 'linkedin',
     href: SOCIAL.linkedin,
     icon: LinkedinIcon,
-    sub: 'linkedin.com/in/pedroferreira3',
+    sub: 'linkedin.com/in/pedro-ferreira021',
   },
   {
     id: 'github',
@@ -35,7 +34,8 @@ export function Contact() {
     const form = new FormData(e.currentTarget);
     const name = String(form.get('name') ?? '');
     const email = String(form.get('email') ?? '');
-    const subject = String(form.get('subject') ?? 'Contato via portfolio');
+    const subjectInput = String(form.get('subject') ?? '');
+    const subject = subjectInput || t('form.subjectDefault');
     const message = String(form.get('message') ?? '');
 
     const body = `${message}\n\n— ${name} (${email})`;
@@ -49,7 +49,6 @@ export function Contact() {
   return (
     <section id="contato" className="container-layout py-20 lg:py-28">
       <FadeIn>
-        <SectionLabel>{t('label')}</SectionLabel>
         <h2 className="text-fluid-3xl mb-4 font-display font-semibold leading-tight tracking-tight">
           {t('title')}
         </h2>
@@ -102,7 +101,7 @@ export function Contact() {
             </label>
             <button
               type="submit"
-              className="inline-flex w-fit items-center gap-2 rounded-md bg-accent px-7 py-3 font-body text-sm font-semibold text-accent-foreground transition-all duration-200 hover:-translate-y-px hover:opacity-90 active:scale-[0.97]"
+              className="inline-flex w-fit items-center gap-2 rounded-md bg-accent px-7 py-3 font-body text-sm font-semibold text-accent-foreground transition-all duration-200 hover:opacity-90 active:scale-[0.97]"
             >
               <Send size={16} strokeWidth={2} />
               {t('form.submit')}

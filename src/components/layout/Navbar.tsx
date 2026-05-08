@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { GithubIcon, LinkedinIcon } from '@/components/ui/BrandIcons';
-import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher';
 import { useActiveSection } from '@/hooks/useActiveSection';
 import { navLinks, SOCIAL } from '@/data/nav';
@@ -53,7 +52,6 @@ export function Navbar() {
 
       <div className="flex items-center gap-1.5">
         <LanguageSwitcher />
-        <ThemeToggle />
         <a
           href={SOCIAL.github}
           target="_blank"

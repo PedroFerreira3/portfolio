@@ -10,6 +10,6 @@ export const navLinks: NavLink[] = [
 
 export const SOCIAL = {
   github: 'https://github.com/PedroFerreira3',
-  linkedin: 'https://linkedin.com/in/pedroferreira3',
+  linkedin: 'https://www.linkedin.com/in/pedro-ferreira021',
   email: 'pedro1798225@gmail.com',
 } as const;

@@ -1,7 +1,7 @@
 {
-  "label": "// 02 — Skills",
   "title": "My Tech Stack",
   "subtitle": "Tools and technologies I use to build products from front to back.",
   "frontend": "Frontend",
-  "backend": "Backend"
+  "backend": "Backend",
+  "tools": "Tools"
 }

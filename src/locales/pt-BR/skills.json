@@ -1,7 +1,7 @@
 {
-  "label": "// 02 — Skills",
   "title": "Minha Stack Técnica",
   "subtitle": "Ferramentas e tecnologias que uso para construir produtos do front ao back.",
   "frontend": "Frontend",
-  "backend": "Backend"
+  "backend": "Backend",
+  "tools": "Ferramentas"
 }

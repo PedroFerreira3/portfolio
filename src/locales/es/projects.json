@@ -1,9 +1,17 @@
 {
-  "label": "// 03 — Proyectos",
   "title": "Proyectos Destacados",
   "subtitle": "Una selección de trabajos que reflejan mi evolución como desarrollador.",
   "demo": "Demo",
   "github": "GitHub",
+  "viewToggle": {
+    "label": "Modo de visualización",
+    "grid": "Cuadrícula",
+    "list": "Lista"
+  },
+  "pagination": {
+    "previous": "Página anterior",
+    "next": "Página siguiente"
+  },
   "bar-do-piau": {
     "title": "Sistema de Gestión Bar do Piau",
     "category": "// Gestión · Software",

@@ -1,5 +1,4 @@
 {
-  "label": "// 05 — Contacto",
   "title": "¿Conversamos?",
   "subtitle": "Abierto a oportunidades, freelances y buenas conversaciones sobre tecnología.",
   "form": {
@@ -9,6 +8,7 @@
     "emailPlaceholder": "tu@email.com",
     "subject": "Asunto",
     "subjectPlaceholder": "Propuesta, duda, proyecto...",
+    "subjectDefault": "Contacto vía portfolio",
     "message": "Mensaje",
     "messagePlaceholder": "¡Hola, Pedro! Me gustaría hablar sobre...",
     "submit": "Enviar Mensaje"

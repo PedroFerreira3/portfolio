@@ -1,8 +1,4 @@
 {
-  "app": {
-    "title": "Portfolio en construcción",
-    "scaffolding": "Estructura inicial lista. Siguiente paso: implementar las secciones siguiendo el design system."
-  },
   "nav": {
     "about": "Sobre mí",
     "skills": "Skills",
@@ -10,19 +6,16 @@
     "experience": "Experiencia",
     "contact": "Contacto"
   },
-  "theme": {
-    "toggle": "Cambiar tema",
-    "light": "Claro",
-    "dark": "Oscuro"
-  },
   "language": {
     "switch": "Cambiar idioma",
     "pt-BR": "Português",
     "en": "English",
     "es": "Español"
   },
+  "a11y": {
+    "skipToContent": "Saltar al contenido"
+  },
   "footer": {
-    "copyright": "© 2026 Pedro Ferreira · Hecho con dedicación",
-    "stack": "React · TypeScript · Tailwind · HeroUI"
+    "stack": "React · TypeScript · Tailwind"
   }
 }

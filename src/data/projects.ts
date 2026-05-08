@@ -16,7 +16,7 @@ export const projects: Project[] = [
     descKey: 'projects:ipv4-calc.desc',
     categoryKey: 'projects:ipv4-calc.category',
     tags: ['React', 'TypeScript', 'Next.js'],
-    demoUrl: '#',
+    demoUrl: 'https://pedroferreira3.github.io/ipcalculator/',
     repoUrl: 'https://github.com/PedroFerreira3',
   },
   {

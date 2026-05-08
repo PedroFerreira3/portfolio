@@ -1,19 +1,30 @@
 {
-  "label": "// 04 — Experiencia",
   "title": "Trayectoria Profesional",
   "currentBadge": "Actual",
   "educationLabel": "Formación",
   "cpcon": {
     "company": "Grupo CPCON Brasil",
-    "role": "Pasante de Desarrollo Full Stack",
-    "date": "Mar 2024 — presente",
-    "desc": "Desarrollo de soluciones web con Next.js, React y TypeScript en el frontend, y Python/Django en el backend. Participación en sprints ágiles, code reviews y entrega continua de funcionalidades."
+    "role": "Pasante Desarrollador Full Stack",
+    "date": "Sep 2025 — Abr 2026",
+    "desc": [
+      "Desarrollo de aplicaciones web Full Stack con Next.js, React, TypeScript y Tailwind CSS en el frontend.",
+      "Backend con Django y Django REST Framework; implementación y consumo de APIs REST.",
+      "Integración completa entre frontend y backend con base de datos PostgreSQL.",
+      "Uso de Docker en entorno preconfigurado para estandarización del desarrollo.",
+      "Participación en correcciones, mejoras evolutivas y mantenimiento de sistemas existentes.",
+      "Colaboración con el equipo en el versionamiento de código (Git/GitHub) y buenas prácticas."
+    ]
   },
   "interasoft": {
     "company": "Interasoft",
     "role": "Programador",
-    "date": "2023 — 2024",
-    "desc": "Desarrollo y mantenimiento de sistemas de software, con foco en calidad de código y entrega de valor al cliente. Experiencia con metodologías ágiles y trabajo en equipo."
+    "date": "Ene 2025 — Jul 2025",
+    "desc": [
+      "Desarrollo de plataforma web educacional utilizando Django y APIs REST.",
+      "Implementación de funcionalidades, pruebas de rendimiento y mejoras de accesibilidad.",
+      "Producción de cursos didácticos de Java y MySQL con ejemplos prácticos y ejercicios interactivos.",
+      "Mentoría de pasantes, revisión de código y garantía de calidad técnica de los materiales."
+    ]
   },
   "fatec": {
     "title": "Análisis y Desarrollo de Sistemas",
