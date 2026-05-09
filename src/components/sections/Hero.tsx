@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight, FileText } from 'lucide-react';
 import FloatingLines from '@/components/ui/FloatingLines';
 
 export function Hero() {
@@ -10,7 +10,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="container-layout relative flex min-h-screen flex-col justify-center pb-20 pt-32"
+      className="container-layout relative flex min-h-screen select-none flex-col justify-center pb-20 pt-32"
     >
       {/* FloatingLines canvas — full viewport, behind everything */}
       <div
@@ -66,10 +66,11 @@ export function Hero() {
         </a>
         <a
           href={cvHref}
-          download
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-2 rounded-md border border-border bg-transparent px-7 py-3 font-body text-sm font-medium text-foreground transition-all duration-200 hover:border-accent hover:text-accent active:scale-[0.97]"
         >
-          <Download size={16} strokeWidth={2} />
+          <FileText size={16} strokeWidth={2} />
           {t('ctaSecondary')}
         </a>
       </div>
