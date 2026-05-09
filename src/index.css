@@ -85,6 +85,7 @@
     font-family: var(--font-body);
     line-height: 1.65;
     min-height: 100vh;
+    overflow-x: clip;
   }
 
   h1,

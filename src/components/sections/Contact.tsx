@@ -109,8 +109,8 @@ export function Contact() {
           </form>
         </FadeIn>
 
-        <FadeIn delay={100}>
-          <div className="flex flex-col gap-3.5">
+        <FadeIn delay={100} className="lg:pt-[22px]">
+          <div className="flex flex-col gap-4">
             {LINKS.map(({ id, href, icon: Icon, sub }) => (
               <a
                 key={id}

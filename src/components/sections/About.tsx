@@ -17,7 +17,7 @@ export function About() {
 
   return (
     <section id="sobre" className="container-layout py-20 lg:py-28">
-      <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20">
+      <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center lg:gap-20">
         <FadeIn>
           <div className="mx-auto aspect-square w-full max-w-80 overflow-hidden rounded-2xl border border-border bg-surface">
             <img src={withBase('avatar.jpeg')} alt="Pedro Ferreira" className="h-full w-full object-cover" />

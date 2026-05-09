@@ -14,8 +14,5 @@
   },
   "a11y": {
     "skipToContent": "Saltar al contenido"
-  },
-  "footer": {
-    "stack": "React · TypeScript · Tailwind"
   }
 }
